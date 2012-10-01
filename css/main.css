@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+}
+html,
+body {
+	height:100%;
+	min-width:1080px;
+	background-color:#034769;
+	color:#ffffff;
+	font-size:16px;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:100;
+}
+img {
+	border:none;
+}
+a:link {
+	text-decoration:none;
+	color:#ffffff;
+	border:none;
+}
+a:visited {
+	text-decoration:none;
+	color:#ffffff;
+	border:none;
+}
+a:hover, a:focus {
+	text-decoration:none;
+	color:#f48b20;
+	border:none;
+}
+cite {
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-size:16px;
+	font-weight:bold;
+	color:#f48b20;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+header {
+	background-color:#235d79;
+	width:100%;
+	max-width:100%;
+	min-width:1080px;
+	height:90px;
+	position:absolute;
+}
+header table {
+	width:1080px;
+	text-align:center;
+}
+#topnav {
+	border:none;
+	display:block;
+	position:relative;
+}
+#topnav li {
+	border:none;
+	display:inline-block;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	position:relative;
+}
+#topnav li a {
+	border:none;
+	display:block;
+	height:43px;	
+}
+#botnav {
+	border:none;
+	display:block;
+	position:relative;
+}
+#botnav li {
+	border:none;
+	display:inline-block;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	position:relative;
+}
+#botnav li a {
+	border:none;
+	display:block;
+	height:35px;
+}
+#sprite_resume {
+	background:url('../images/navigation/botnav.png') 0px 0px no-repeat;
+	height:32px;
+	width:100px;
+}
+#sprite_resume a:hover, a:focus {
+	background: url('../images/navigation/botnav.png') 0px -32px no-repeat;
+	border:none;
+}
+#resume_viewpdf {
+	background:url('../images/resume/viewpdf.png') 0px 0px no-repeat;
+	float:left;
+	height:165px;
+	margin-left:5px;
+	margin-top:90px;
+	position:fixed;
+	width:165px;
+	z-index:3;
+	opacity:0.7;
+	filter:alpha(opacity=70);  /*For IE8 and earlier */
+}
+a#resume_viewpdf:hover, a#resume_viewpdf:focus  {
+	background: url('../images/resume/viewpdf.png') -165px 0px no-repeat;
+	border:none;
+	display:block;
+	opacity:1.0;
+	filter:alpha(opacity=100);  /*For IE8 and earlier */
+}
+#sprite_projects {
+	background:url('../images/navigation/topnav.png') 0px 0px no-repeat;
+	height:43px;
+	width:110px;
+}
+#sprite_projects a:hover, a:focus {
+	background: url('../images/navigation/topnav.png') 0px -43px no-repeat;
+	border:none;
+}
+#sprite_games {
+	background:url('../images/navigation/topnav.png') -110px 0px no-repeat;
+	height:43px;
+	width:110px;		
+}
+#sprite_games a:hover, a:focus {
+	background: url('../images/navigation/topnav.png') -110px -43px no-repeat;
+	border:none;
+}
+#sprite_web {
+	background:url('../images/navigation/topnav.png') -220px 0px no-repeat;
+	height:43px;
+	width:165px;	
+}
+#sprite_web a:hover, a:focus {
+	background: url('../images/navigation/topnav.png') -220px -43px no-repeat;
+	border:none;
+}
+#sprite_ui {
+	background:url('../images/navigation/topnav.png') -385px 0px no-repeat;
+	height:43px;
+	width:139px;
+}
+#sprite_ui a:hover, a:focus {
+	background: url('../images/navigation/topnav.png') -385px -43px no-repeat;
+	border:none;
+}
+#sprite_art {
+	background:url('../images/navigation/topnav.png') -524px 0px no-repeat;
+	height:43px;
+	width:110px;
+}
+#sprite_art a:hover, a:focus {
+	background: url('../images/navigation/topnav.png') -524px -43px no-repeat;
+	border:none;
+}
+#sprite_videos {
+	background:url('../images/navigation/topnav.png') -634px 0px no-repeat;
+	height:43px;
+	width:110px;	
+}
+#sprite_videos a:hover, a:focus {
+	background: url('../images/navigation/topnav.png') -634px -43px no-repeat;
+	border:none;
+}
+#content {
+	color:#ffffff;
+	min-height:100%;
+    height:auto !important;
+    height:100%;
+    margin:0 auto -50px; /* Set footer height. */
+}
+#content table {
+	width:1020px;
+}
+#projectTitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+	color:#f48b20;
+	margin:10px;
+}
+.tools img {
+	border:none;
+	height:50px;
+	padding-right:4px;
+}
+ul.tools {
+	border:none;
+	height:50px;
+	display:block;
+}
+ul.tools li {
+	border:none;
+	height:50px;
+	display:inline-block;
+}
+ul.tool img {
+	border:none;
+	height:50px;
+}
+a.toolsLink
+{
+	display: block;
+	height:50px;
+	margin:0px;
+	position:relative;
+	width:76px;
+}
+a.toolsLink:hover .toolCaptionContainer {
+	display:block;
+	height:50px;
+	position:absolute;
+	width:76px;
+	z-index:2;
+}
+a.toolsLink .toolCaptionContainer .toolCaption {
+	color:#f48b20;
+	display:none;
+	font-size:11px;
+	font-weight:bold;
+	height:30px;
+	overflow:hidden;
+	position:absolute;
+	text-align:center;
+	text-decoration:none;
+	top:40%;
+	width:76px;
+	z-index:2;
+}
+a.toolsLink:hover .toolCaption {
+	background:#235d79;
+	display:block;
+}
+.resume_instruction {
+	border:none;
+	height:100px;
+	/*margin-right:332px;
+	margin-top:50px;*/
+	padding:0px;
+	position:static;
+	z-index:2;
+}
+#resume_edu_div {
+	border:none;
+	background-repeat:no-repeat;
+	height:352px;
+	width:432px;
+	/*text-align:center;*/
+}
+#resume_edu_instruction {
+	border:none;
+	float:left;
+	margin-top:60px;
+}
+#resume_edu_placeholder {
+	border:none;
+	float:right;
+	height:352px;
+	margin-right:78px;
+	margin-top:0px;
+	vertical-align:top;
+	width:254px;
+	z-index:1;
+}
+#enlargedImageContainer {
+	background-image:url('../images/resume/bkg.png');
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position:center; 
+	border:none;
+	display:none;
+	height:100%;
+	left:0px;
+	margin:0 auto;
+	position:fixed;
+	right:0px;
+	text-align:center;
+	top:0px;
+	width:100%;
+	z-index:3;
+}
+#enlargedImage img {
+	border:none;
+	margin-top:/*0 auto*/40px;
+	margin-left:0 auto;
+	margin-right:0 auto;
+	margin-bottom:0 auto;
+	max-height:600px;
+	width:100%;
+	max-width:600px;
+	position:relative;
+	text-align:center;
+	z-index:4;
+}
+#arrow_line {
+	border:none;
+	padding:0px;
+	margin:0px;
+	height:33px;
+	width:460px;
+	vertical-align:top;
+}
+footer, .push {
+	height: 50px; /* Set footer height. */
+    /* clear: both; */ /* Muti-column fix.*/
+}
+footer {
+	background-color:#235d79;
+	width:100%;
+}
+footer table {
+	width:1080px;
+	height:40px;
+}
+footer div {
+	text-align:right;
+}
+#icons {
+	border:none;
+	height:35px;	
+}
+.scroller {
+	position:relative;
+	padding:0;
+	margin:0;
+}
+.scroller div {
+	/*height:414px;*/
+	width:647px;
+}
+.scroller img {
+	height:414px;
+	width:647px;
+	border:none;
+}
+.scroller .pictures {
+	border:none;
+	height:414px;
+	width:647px;
+	border:0;
+	margin:0;
+}
+.scroller .pictures li.pic {
+	border:none;
+	list-style-type:none;
+	visibility:hidden;
+	position:absolute;
+	right:40px;
+}
+.scroller .buttons {
+	border:none;
+	display:none;
+}
+.scroller .buttons {
+	border:none;
+	display:block;
+	position:absolute;
+	z-index:100;
+	left:220px;
+	bottom:-30px;
+	margin:0;
+}
+.scroller .buttons li {
+	border:none;
+	cursor:pointer;
+	float:left;
+	display:inline;
+	width:30px;
+	height:30px;
+	margin:0;
+	padding:2px;
+	line-height:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:32px;
+	font-weight:bold;
+	background-repeat:no-repeat;
+	opacity:0.2;
+	filter:alpha(opacity=20);  /*For IE8 and earlier */
+}
+.scroller .buttons li a {
+	text-decoration:none;
+	color:#ffffff;
+	cursor:pointer;
+	outline:0;
+	opacity:0.2;
+	filter:alpha(opacity=20);  /*For IE8 and earlier */
+}
+.scroller ul.buttons li a:hover {
+	text-decoration:none;
+	color:#ffffff;
+	cursor:pointer;
+	opacity:1;
+	filter:alpha(opacity=100);  /*For IE8 and earlier */
+}
+.scroller ul.buttons li.active a:hover,
+.scroller ul.buttons li.active a {
+	color:#ffffff;
+	cursor:pointer;
+	opacity:1;
+	filter:alpha(opacity=100);  /*For IE8 and earlier */
+}
+ul.thumbnails {
+	float:center;
+	list-style:none;
+	margin:0;
+	padding:0px;
+	width:50px;
+}
+ul.thumbnails li {
+	margin:0;
+	padding:0px;
+	position:relative;
+	width:30px;
+	height:30px;
+	display:inline-block;
+}
+ul.thumbnails li img {
+	border:none;
+	width:30px;
+	height:30px;
+	-ms-interpolation-mode:bicubic;
+	padding:0px;
+	background:none;
+	position:absolute;
+	left:0;
+	top:0;
+}
+ul.thumbnails li a:link, ul.thumbnails li a.:visited {
+	border:none;
+}
+ul.thumbnails li a:hover, ul.thumbnails li a.:focus {
+	border:thin;
+	border-color:#f48b20;
+}
+.screenshots {
+	padding:5px;
+}
+.selection {
+	text-align:center;
+	width:477px;
+	height:102px;
+	overflow:hidden;
+	display:inline-block;
+}
+.selection img {
+	border:none;
+	height:100px;
+}
+#left, #right {
+	opacity:0.5;
+	filter:alpha(opacity=50);  /*For IE8 and earlier */
+}
